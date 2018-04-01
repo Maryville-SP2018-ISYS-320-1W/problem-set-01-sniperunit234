@@ -7,28 +7,32 @@
 public class P2_FightSong {
 	public static void main(String[] args) {
 		
-		go();
-		line();
-		go();
-		best();
-		go();
-		line();
-		go();
-		best();
-		go();
-		line();
-		go();
-	}
+		  printGo();
+	        printNewLine();
+	        printParagraph();
+	        printNewLine();
+	        printParagraph();
+	        printNewLine();
+	        printGo();
+	    }
+	                                                                    
+	    public static void printGo() {
+	        System.out.println("Go, team, go!");
+	        System.out.println("You can do it.");
+	    }
 
-	public static void go() {
-		System.out.println("Go, team, go!\nYou can do it.");
+	    public static void printWest() {
+	        System.out.println("You're the best,");
+	        System.out.println("In the West.");
+	    }
+	    
+	    public static void printNewLine() {
+	        System.out.println();
+	    }
+
+	    public static void printParagraph() {
+	        printGo();
+	        printWest();
+	        printGo();
+	    }
 	}
-	
-	public static void best() {
-		System.out.println("You're the best,\nIn the West.");
-	}
-	
-	public static void line() {
-		System.out.println();
-	}
-}
